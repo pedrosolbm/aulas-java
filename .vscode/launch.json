@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercicio4",
+            "request": "launch",
+            "mainClass": "app.Exercicio4",
+            "projectName": "aula1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercicio3",
+            "request": "launch",
+            "mainClass": "app.Exercicio3",
+            "projectName": "aula1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercicio2",
+            "request": "launch",
+            "mainClass": "app.Exercicio2",
+            "projectName": "aula1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercicio1",
+            "request": "launch",
+            "mainClass": "app.Exercicio1",
+            "projectName": "aula1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "app.App",
+            "projectName": "aula1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Teste",
+            "request": "launch",
+            "mainClass": "Teste"
+        }
+    ]
+}
