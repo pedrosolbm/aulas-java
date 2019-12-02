@@ -10,7 +10,7 @@ public class Exercicio2 {
             double peso = ler.nextDouble();
             System.out.print("Informe sua altura: ");
             double altura = ler.nextDouble();
-
+            ler.close();
             System.out.printf("IMC: %.2f", (peso / (altura * altura)));
 
         } catch (Exception e) {

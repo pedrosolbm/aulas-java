@@ -7,7 +7,8 @@ public class Exercicio1 {
         try {
         Scanner ler = new Scanner(System.in);
         System.out.print("Informe o valor em dolar: $");
-        double real = ler.nextDouble();           
+        double real = ler.nextDouble();    
+        ler.close();       
         System.out.println("Valor em real: R$" + real * 2.50);
         } catch (Exception e) {
             System.out.println("Parametro Invalido!");

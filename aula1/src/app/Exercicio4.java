@@ -14,6 +14,7 @@ public class Exercicio4 {
                 vetor[i]=ler.nextDouble();
                 media += vetor[i];
             }
+            ler.close();
             System.out.printf("Media: %.2f\n", (media/4));
 
         } catch (Exception e) {
