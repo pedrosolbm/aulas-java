@@ -59,8 +59,7 @@ public class Exercicio14{
 
     } 
 
-          //----------Os códigos realizam a lógica para definir qual é o signo--------------//
-    
+          //----------Os códigos realizam a lógica para definir qual é o signo--------------//    
     String signo="";
 
     if((dia >= 21)&&(mes == 3)||(dia <=20)&&(mes == 4)){

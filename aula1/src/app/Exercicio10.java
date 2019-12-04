@@ -26,7 +26,7 @@ public class Exercicio10 {
             System.out.println("A comissão do segundo vendedor é : R$ "+(com2));//exibe a mensagem na tela
             System.out.println("A comissão do terceiro vendedor é: R$ "+(com3));//exibe a mensagem na tela
             System.out.println("A comissão do quarto vendedor é: R$ "+(com4));//exibe a mensagem na tela
-
+            ler.close();
         } 
         catch (Exception e) {
              //se houver erro, vai informar a mensagem abaixo para o usuario

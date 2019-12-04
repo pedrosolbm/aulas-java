@@ -32,5 +32,6 @@ public class Exercicio11 {
         } else {
             System.out.println("Emprestimo NÃO autorizado");
         }
+        ler.close();
     } // fim do main
 } // fim do algoritmo

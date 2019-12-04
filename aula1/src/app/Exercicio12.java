@@ -22,6 +22,7 @@ public class Exercicio12 {
             if (idade >= 18 && idade <= 70) { // se a idade foir maior ou igual a 18 ou menor ou igual a 70
                 System.out.println("Voto obrigatorio!");
             }
+            ler.close();
         } catch (Exception e) { // se o usuario digitar algo diferente de uma idade entra na exeção
             System.out.println("Idade invalida!"); // mensagem de erro
         }
