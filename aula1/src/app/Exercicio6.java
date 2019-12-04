@@ -1,6 +1,6 @@
 package app;
 
-import java.util.Scanner;
+import java.util.Scanner;//importando a classe scanner para pegar informações do usuário
 
 public class Exercicio6 {
     public static void main(String[] args) {
@@ -35,9 +35,9 @@ public class Exercicio6 {
 
             //vai imprimir na tela as informações
             System.out.printf("Total terreno: \t %.2fm²\n", at);
-            System.out.printf("Area construida: \t %.2fm² \tPreco: %.2f\n", ac, valorConstruido);
-            System.out.printf("Area não construida: \t %.2fm² \tPreco: %.2f\n", anc,valorNaoConstruido);
-            System.out.printf("Valor do imposto: \t %.2fm²\n", (valorConstruido+valorNaoConstruido));
+            System.out.printf("Area construida: \t %.2fm² \tPreco: R$ %.2f\n", ac, valorConstruido);
+            System.out.printf("Area não construida: \t %.2fm² \tPreco: R$ %.2f\n", anc,valorNaoConstruido);
+            System.out.printf("Valor do imposto: \t R$ %.2f\n", (valorConstruido+valorNaoConstruido));
 
            
 
