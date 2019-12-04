@@ -5,6 +5,16 @@
             "name": "CodeLens (Launch) - Exercicio21",
             "request": "launch",
             "mainClass": "app.Exercicio21",
+            "name": "CodeLens (Launch) - Exercicio20",
+            "request": "launch",
+            "mainClass": "app.Exercicio20",
+            "projectName": "aula1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercicio19",
+            "request": "launch",
+            "mainClass": "app.Exercicio19",
             "projectName": "aula1"
         },
         {
