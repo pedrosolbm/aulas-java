@@ -7,7 +7,8 @@ public class Exercicio7 {
     public static void main(String[] args) {
         //começa a executar o codigo verificando se haverá erros
         try {
-            Scanner ler = new Scanner(System.in);
+            Scanner ler = new Scanner(System.in);//Declara o scanner para ser utilizado na leitura de informação do teclado
+            
             System.out.print("Informe o raio: "); //exibe a mensagem na tela
             //recebe as informações do usuario
             double raio = ler.nextDouble();

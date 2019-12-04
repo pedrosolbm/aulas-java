@@ -7,59 +7,60 @@ public class Exercicio14{
 
     try {//começa a executar o codigo verificando se haverá erros
 
-        System.out.println("\nInforme o dia");//exibe a mensagem na tela e recebe a informação do dia 
+        System.out.println("Informe o dia");//exibe a mensagem na tela e recebe a informação do dia 
         double dia = ler.nextDouble();
-        System.out.println("\nInforme o mes");//exibe a mensagem na tela e recebe a informação do mês
+        System.out.println("Informe o mes");//exibe a mensagem na tela e recebe a informação do mês
         double mes = ler.nextDouble();
 
                 //----------Os códigos realizam a lógica para definir o mês--------------//
 
     if (dia <32 && mes == 1){
-        System.out.println("\nO mes e Janeiro");//exibe a mensagem na tela
+        System.out.println("O mes e Janeiro");//exibe a mensagem na tela
         }
     else if (dia <29 && mes == 2){
-        System.out.println("\nO mes e Fevereiro");//exibe a mensagem na tela
+        System.out.println("O mes e Fevereiro");//exibe a mensagem na tela
     }
     else if (dia <31 && mes == 3){
-        System.out.println("\nO mes e Março");//exibe a mensagem na tela
+        System.out.println("O mes e Março");//exibe a mensagem na tela
     }
     else if (dia <31 && mes == 4){
-        System.out.println("\nO mes e Abril");//exibe a mensagem na tela
+        System.out.println("O mes e Abril");//exibe a mensagem na tela
     }
     else if (dia <32 && mes == 5){
-        System.out.println("\nO mes e Maio");//exibe a mensagem na tela
+        System.out.println("O mes e Maio");//exibe a mensagem na tela
     }
     else if (dia <31 && mes == 6){
-        System.out.println("\nO mes e Junho");//exibe a mensagem na tela
+        System.out.println("O mes e Junho");//exibe a mensagem na tela
     }
     else if (dia <32 && mes == 7){
-        System.out.println("\nO mes e Julho");//exibe a mensagem na tela
+        System.out.println("O mes e Julho");//exibe a mensagem na tela
     }
     else if (dia <32 && mes == 8){
-        System.out.println("\nO mes e Agosto");//exibe a mensagem na tela
+        System.out.println("O mes e Agosto");//exibe a mensagem na tela
     }
     else if (dia <31 && mes == 9){
-        System.out.println("\nO mes e Setembro");//exibe a mensagem na tela
+        System.out.println("O mes e Setembro");//exibe a mensagem na tela
     }
     else if (dia <32 && mes == 10){
-        System.out.println("\nO mes e Outubro");//exibe a mensagem na tela
+        System.out.println("O mes e Outubro");//exibe a mensagem na tela
     }
     else if (dia <31 && mes == 11){
-        System.out.println("\nO mes e Novembro");//exibe a mensagem na tela
+        System.out.println("O mes e Novembro");//exibe a mensagem na tela
     }
     else if (dia <32 && mes == 12){
-        System.out.println("\nO mes e Dezembro");//exibe a mensagem na tela
+        System.out.println("O mes e Dezembro");//exibe a mensagem na tela
     }
     else if (dia <= 0 || mes <= 0){
-        System.out.println("\nVerifique sua data!");//exibe a mensagem na tela
+        System.out.println("Verifique sua data!");//exibe a mensagem na tela
 
     }
     else {
-        System.out.println("\nErro de digitação, entre novamente com os valores");//exibe a mensagem na tela
+        System.out.println("Erro de digitação, entre novamente com os valores");//exibe a mensagem na tela
 
     } 
 
-          //----------Os códigos realizam a lógica para definir qual é o signo--------------//    
+          //----------Os códigos realizam a lógica para definir qual é o signo--------------//
+    
     String signo="";
 
     if((dia >= 21)&&(mes == 3)||(dia <=20)&&(mes == 4)){
@@ -99,6 +100,8 @@ public class Exercicio14{
         signo = "Peixes";
     }
     System.out.println("\nSeu signo e: " + signo);//exibe a mensagem na tela
+
+    ler.close();//para de esperar entrada de dados pelo teclado
         
     } catch (Exception e) {
         //se houver erro, vai informar a mensagem abaixo para o usuario
