@@ -3,7 +3,8 @@ package app;
 /*10. Inclua no exercício anterior a solicitação do ano de 
  nascimento e também da data de hoje. A partir destas 
  informações, apresente a idade atual desta pessoa.
- */import java.util.Scanner;
+ */
+import java.util.Scanner;
 
 public class Exercicio13 {
     public static void main(String[] args) {
