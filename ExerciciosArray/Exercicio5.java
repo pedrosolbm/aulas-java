@@ -13,26 +13,33 @@ import java.util.Scanner;
 public class Exercicio5 {
 
     public static void main(String[] args) {
+        
         // declaração de variaveis
         Scanner ler = new Scanner(System.in);
-        int vetor[] = new int[10];
-        int numero=0;
+        int numero = 0;
+
+        // solicita o tamanho do vetor
+        System.out.print("Digite o tamanho do vetor: ");
+        int t = ler.nextInt();
+
+        // o vetor terá um tamanho t definido pelo usuario
+        int vetor[] = new int[t];
 
         // contador para inserir os 10 numeros
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < vetor.length; i++) {
             System.out.print("Digite o " + (i + 1) + "º numero:");
             vetor[i] = ler.nextInt();
         }
 
-        //Solicita ao usuario o numero para ser verificado no vetor
+        // Solicita ao usuario o numero para ser verificado no vetor
         System.out.print("Digite o numero que gostaria de verificar:");
         numero = ler.nextInt();
 
-        //fecha a função scanner, pois não são mais inseridas informações do usuario
+        // fecha a função scanner, pois não são mais inseridas informações do usuario
         ler.close();
 
         // Chama o metodo de contagem de negativos dentro da mensagem
-        System.out.println("Você digitou " + comparaNum(vetor, numero) + " vezes o numero "+numero);
+        System.out.println("Você digitou " + comparaNum(vetor, numero) + " vezes o numero " + numero);
     }
 
     // Metodo para contar os numeros negativos de um dado vetor
