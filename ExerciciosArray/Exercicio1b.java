@@ -3,7 +3,7 @@ Para cada conjunto de valores abaixo, escreva o código Java, usando laço(s),
 que preencha um array com os valores: b) 0 1 4 9 16 25 36 49 64 81 100
  */
 /*
- * Programadores: Pedro Sol B Montes, Guilherme A. Dias
+ * Programadores: Pedro Sol B. Montes, Guilherme A. Dias
  * Data: 5/12/2019
  */
 public class Exercicio1b {
