@@ -36,5 +36,3 @@ public class Exercicio3 {
         }
     }
 }
-
-// para cada repetição, a posição do vetor vai receber (i + 1)
