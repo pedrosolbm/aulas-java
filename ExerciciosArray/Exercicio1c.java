@@ -2,7 +2,7 @@
 //que preencha um array com os valores: c) 1 2 3 4 5 10 20 30 40 50
 
 /**
- * Programadores: Pedro Sol B Montes, Guilherme A. Dias
+ * Programadores: Pedro Sol B. Montes, Guilherme A. Dias
  * Data: 5/12/2019
  */
 public class Exercicio1c {
