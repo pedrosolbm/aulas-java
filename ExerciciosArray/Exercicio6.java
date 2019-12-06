@@ -7,10 +7,6 @@ ocorrência.
  * Programadores: Pedro Sol B. Montes, Guilherme A. Dias 
  * Data: 5/12/2019
  */
-
-/**
- * Exercicio7
- */
 // importando a biblioteca Scanner para ler informações do usuario via teclado
 
 import java.util.Scanner;
@@ -19,7 +15,6 @@ import java.util.Scanner;
 import java.lang.reflect.Array;
 
 public class Exercicio6 {
-
     public static void main(String[] args) {
 
         // Chamada do metodo

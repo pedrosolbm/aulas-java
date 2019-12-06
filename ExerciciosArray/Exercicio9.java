@@ -11,25 +11,27 @@ ocorrência.
 // importando a biblioteca Scanner para ler informações do usuario via teclado
 import java.util.Scanner;
 
-public class Exercicio7 {
+// importa a biblioteca de array para alterar os valores do vetor
+import java.lang.reflect.Array;
+
+public class Exercicio9 {
 
     public static void main(String[] args) {
 
         // Chamada do metodo
-        maiorValor();
+        parImpar();
     }
 
     // Metodo que vai receber
-    public static Integer maiorValor() {
+    public static Integer parImpar() {
         // declaração de variaveis
         Scanner ler = new Scanner(System.in);
-        int maior;
-        int pos = 0;
+
         // solicita o tamanho do vetor
         System.out.print("Digite o tamanho do vetor: ");
         int t = ler.nextInt();
 
-        // o vetor terá um tamanho t definido pelo usuario
+        // o tamnho dos vetores será definido pelo definido pelo usuario
         int vetor[] = new int[t];
 
         // contador para inserir os numeros no vetor
@@ -38,25 +40,27 @@ public class Exercicio7 {
             vetor[i] = ler.nextInt();
         }
 
-        // a variavel maior recebe o primeiro valor do vetor para comparação futura
-        maior = vetor[0];
-
         // fecha a função scanner, pois não são mais inseridas informações do usuario
         ler.close();
 
-        // Percorre o vetor procurando o maior valor
+        // Percorre o vetor verificando se o numero é par ou impar
         for (int i = 0; i < vetor.length; i++) {
-            if (vetor[i] > maior) {
-                maior = vetor[i];
-                pos = i;
+
+            // processamento. Se for par, vira 1, se não vira -1
+            if ((vetor[i] % 2) == 0) {
+                Array.set(vetor, i, 1);
+            } else {
+                Array.set(vetor, i, -1);
             }
         }
 
-        // Mensagem com as informações solicitadas
-        System.out.println("O maior valor é " + maior + " na " + (pos + 1) + "ª posição ");
+        //imprime o vetor resolvido
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print(vetor[i] + ", ");
+        }
 
-        //retorna a posicao e sai do metodo
-        return pos;
+        // saida do metodo
+        return 0;
     }
 
 }
