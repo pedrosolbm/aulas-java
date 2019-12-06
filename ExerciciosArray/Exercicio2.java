@@ -1,6 +1,6 @@
 /*
- * Escreva um trecho Java que exiba os valores de um 
- * Array a Double numa mesma linha.
+Escreva um trecho Java que exiba os valores de um array a double numa mesma
+linha.
 */
 
 /* 
@@ -18,7 +18,7 @@ public class Exercicio2 {
             // para cada repetição, a posição do vetor vai receber (i + 1)
             a[i] = i + 1;
             // imprime o valor do vetor
-            System.out.print(a[i]+" ");
+            System.out.print(a[i] + " ");
         }
     }
 }
