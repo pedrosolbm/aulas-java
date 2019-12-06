@@ -1,4 +1,3 @@
-
 /**
 Crie um método que recebe um array de inteiros a e um valor inteiro x e retorna a
 quantidade de vezes que x aparece no array a.
@@ -13,7 +12,7 @@ import java.util.Scanner;
 public class Exercicio5 {
 
     public static void main(String[] args) {
-        
+
         // declaração de variaveis
         Scanner ler = new Scanner(System.in);
         int numero = 0;
