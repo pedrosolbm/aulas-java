@@ -26,7 +26,6 @@ public class Exercicio7 {
     public static Integer maiorValor() {
         // declaração de variaveis
         Scanner ler = new Scanner(System.in);
-        int numero = 0;
         int maior;
         int pos = 0;
         // solicita o tamanho do vetor
