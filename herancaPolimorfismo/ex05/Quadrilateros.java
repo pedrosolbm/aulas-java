@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex05;
-
 abstract class Quadrilateros implements FormaGeometrica {
 
 	  private double a;

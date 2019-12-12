@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex06;
-
 public class AssistenteTecnico extends Assistente {
 
 	double bonusSalarial;

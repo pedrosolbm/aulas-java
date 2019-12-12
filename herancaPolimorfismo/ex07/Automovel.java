@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex07;
-
 public class Automovel extends Veiculo{
 	
 	int cavalos;
@@ -27,7 +25,7 @@ public class Automovel extends Veiculo{
 	}
 	
 
-	public void listarVerificações() {
+	public void listarVerificaï¿½ï¿½es() {
 		System.out.println( "Automovel [cavalos=" + cavalos + ", numPortas=" + numPortas + ", tipo=" + tipo + ", qtdRodas="
 				+ qtdRodas + ", cor=" + cor + ", ano=" + ano + ", aro=" + aro + "]");
 	}

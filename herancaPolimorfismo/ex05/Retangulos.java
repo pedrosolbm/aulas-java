@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex05;
-
 public class Retangulos extends Quadrilateros {
 
 	

@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex05;
-
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -54,8 +52,8 @@ public class Main {
 		for (int i = 0; i<fg.size(); i++) {
 			
 			System.out.println("");
-			System.out.println("O tamanho do perimetro é: "+new DecimalFormat(".##").format(fg.get(i).getPerimetro()));
-			System.out.println("O tamanho da area é: "+new DecimalFormat(".##").format(fg.get(i).getArea()));
+			System.out.println("O tamanho do perimetro ï¿½: "+new DecimalFormat(".##").format(fg.get(i).getPerimetro()));
+			System.out.println("O tamanho da area ï¿½: "+new DecimalFormat(".##").format(fg.get(i).getArea()));
 			
 			
 		}

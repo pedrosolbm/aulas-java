@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex01;
-
 public class ContaCorrente {
 	
 	int numConta;
@@ -66,7 +64,7 @@ public class ContaCorrente {
 	public double sacar(double valor) {
 		
 		if((valor+valor*0.005)>saldo) {
-			System.out.println("Valor superior ao saldo disponível");
+			System.out.println("Valor superior ao saldo disponï¿½vel");
 		}else {
 			saldo= saldo-(valor+valor*0.005);
 		}

@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex9;
-
 public class ImovelVelho extends Imovel{
 
 	double descontoValor;
@@ -22,7 +20,7 @@ public class ImovelVelho extends Imovel{
 	public void valorImovelVelho(double valor) {
 		valor -= descontoValor;
 		
-		System.out.println("Esse imovel por nao ser novo tem o desconto de 3%. O preço com desconto é: R$"+valor);
+		System.out.println("Esse imovel por nao ser novo tem o desconto de 3%. O preï¿½o com desconto ï¿½: R$"+valor);
 		
 		
 	}

@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex08;
-
 public class VIP extends Ingresso{
 	
 	double adicionalVip;
@@ -15,7 +13,7 @@ public class VIP extends Ingresso{
 	
 	public void imprimeIngressoVip(double valor) {
 		adicionalVip += valor;
-		System.out.println("Ingresso VIP --> O preço do ingresso é: R$"+adicionalVip+" reais");
+		System.out.println("Ingresso VIP --> O preï¿½o do ingresso ï¿½: R$"+adicionalVip+" reais");
 	}
 	
 

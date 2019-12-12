@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex9;
-
 public class ImovelNovo extends Imovel {
 
 	double valorAdicional;
@@ -20,7 +18,7 @@ public class ImovelNovo extends Imovel {
 	public void valorImovelNovo(double valor) {
 		valorAdicional += valor;
 		
-		System.out.println("Esse imovel por ser novo tem um valor adicional de 3%. O preço com o adicional é: R$"+valorAdicional);
+		System.out.println("Esse imovel por ser novo tem um valor adicional de 3%. O preï¿½o com o adicional ï¿½: R$"+valorAdicional);
 		
 		
 	}

@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex08;
-
 public class CamaroteInferior extends VIP{
 	
 	String localizacao;

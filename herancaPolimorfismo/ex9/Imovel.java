@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex9;
-
 public class Imovel {
 	String Endereco;
 	double preco;

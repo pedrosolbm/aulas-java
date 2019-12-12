@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex06;
-
 import java.util.ArrayList;
 
 public class Main {
@@ -23,7 +21,7 @@ public class Main {
 		
 		
 		aa.setMatricula(234);
-		aa.setNome("João");
+		aa.setNome("Joï¿½o");
 		aa.setSalario(2500.00);
 		aa.setAdicionalNoturno(aa.getSalario()*0.3);
 		aa.setTurno("Noturno");

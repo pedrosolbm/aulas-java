@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex06;
-
 public class AssistenteAdministrativo extends Assistente {
 	
 	double adicionalNoturno;

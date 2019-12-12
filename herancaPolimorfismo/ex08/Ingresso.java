@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex08;
-
 public class Ingresso {
 	double valor;
 	
@@ -13,7 +11,7 @@ public class Ingresso {
 
 	public String imprimeValor() {
 		
-		return "O valor do ingresso é: R$"+valor+" reais";
+		return "O valor do ingresso ï¿½: R$"+valor+" reais";
 		
 	}
 }

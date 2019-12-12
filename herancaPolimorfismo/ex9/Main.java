@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex9;
-
 public class Main {
 	public static void main(String[] args) {
 		
@@ -7,7 +5,7 @@ public class Main {
 		ImovelNovo in = new ImovelNovo();
 		ImovelVelho iv = new ImovelVelho();
 		
-		in.setEndereco("Rua dos milionários, 777");
+		in.setEndereco("Rua dos milionï¿½rios, 777");
 		in.setPreco(550300);
 		in.setValorAdicional(in.getPreco()*0.03);
 		System.out.println(in.toString());

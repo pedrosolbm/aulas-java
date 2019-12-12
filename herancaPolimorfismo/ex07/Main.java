@@ -1,5 +1,3 @@
-	package br.com.residencia.bin.ex07;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class Main {
 		a.setQtdRodas(4);
 		a.setTipo("Carro");
 		
-		a.listarVerificações();
+		a.listarVerificaï¿½ï¿½es();
 		System.out.println();
 		
 		a.limpar();
@@ -36,7 +34,7 @@ public class Main {
 		b.setQtdRodas(2);
 		b.setTipo("speed");
 		
-		b.listarVerificações();
+		b.listarVerificaï¿½ï¿½es();
 		System.out.println();
 		
 		b.limpar();

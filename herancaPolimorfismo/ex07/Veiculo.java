@@ -1,5 +1,3 @@
-package br.com.residencia.bin.ex07;
-
 public abstract class Veiculo {
 
 	
@@ -41,7 +39,7 @@ public abstract class Veiculo {
 		this.aro = aro;
 	}
 
-	abstract void listarVerificações();
+	abstract void listarVerificaï¿½ï¿½es();
 	
 	abstract void limpar();
 	
