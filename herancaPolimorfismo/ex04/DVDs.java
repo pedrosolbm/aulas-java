@@ -12,22 +12,24 @@ Programadores: Eduardo e Daiana
 Data: 11/12/2019
  */
 
-package exQuatro;
+public class DVDs extends Produto{
 
-public class Livros extends Produto {
-
-	private String autor;
+	//decarando variavel propria
+	private String duracao;
 	
-	public Livros(int cod_Barras) {
+	//metodo construtor
+	public DVDs(int cod_Barras) {
 		super(cod_Barras);
 	}
-
-	public void dados (String nome, double preco, String autor){
+	//Método que recebe os dados do produto
+	public void dados (String nome, double preco, String duracao){
+		//herda o construtor  da classe pai
 		super.dados(nome, preco);
-		this.autor = autor;
+		this.duracao = duracao;
 	}
-	
+
+	//Sobrescrita do metodo toString
 	public String toString(){
-		return super.toString() + "\nAutor: " + this.autor;	
-	}
+		return super.toString() + "\nDuração: " + this.duracao;	
+	}	
 }

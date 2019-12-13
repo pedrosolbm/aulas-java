@@ -1,7 +1,6 @@
-package numero_3;
-
-public class Produto{
-	
+//classe produto herda comparable
+public class Produto implements Comparable {
+	//delcarando variaveis proprias
 	private String nome;
 	private double preco;
 	private int cod_Barras;

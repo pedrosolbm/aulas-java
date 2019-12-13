@@ -1,9 +1,9 @@
-package numero_3;
-
 //Classe feita com objetivo de instanciar um produto do tipo CD
 public class CDs extends Produto{
 
+	//delcanrando variavel prorpia
 	private int num_Faixas = 0;
+
 	//Metodo construtor
 	public CDs(int cod_Barras) {
 		super(cod_Barras);

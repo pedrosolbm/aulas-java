@@ -3,19 +3,17 @@
 Comparable, e implemente a comparação por nome. Ao final do método Loja.main(), ordene o vetor
 utilizando o método java.util.Arrays.sort() e imprima-o novamente. Depois altere a implementação da
 comparação para ordenar por preço e verifique o resultado. 
-
-Programadores: Daniel Gastardelli e Tiago Marques
-Data: 13/12/2019
  */
 
-package numero_4;
+ /*
+ * Programadores: Pedro Sol B. Montes, Guilherme A. Dias 
+ * Data:11/12/2019
+ */
 
 //Importando biblioteca para listar vetor
-
 import java.util.ArrayList;
 
 //Importando bibliotecas para fazer requisições ao usuário
-
 import java.util.Scanner;
 
 //Classe principal

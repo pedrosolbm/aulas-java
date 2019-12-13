@@ -12,8 +12,6 @@ Programadores: Eduardo e Daiana
 Data: 11/12/2019
  */
 
-package exQuatro;
-
 //Classe feita com objetivo de instanciar um produto do tipo CD
 public class CDs extends Produto{
 
