@@ -1,5 +1,25 @@
+/* 
+ * Crie uma classe de Teste com o método main. Neste método:
+crie um assistente administrativo e um técnico. Imprima o número de matrícula e o nome de cada
+um deles.
+crie um animal do tipo cachorro e faça-o latir. Crie um gato e faça-o miar. Faça os dois animais
+caminharem.
+teste (como quiser) as classes Rica, Pobre e Miseravel.
+crie um ingresso. Peça para o usuário digitar 1 para normal e 2 para VIP. Conforme a escolha do
+usuário, diga se o ingresso é do tipo normal ou VIP. Se for VIP, peça para ele digitar 1 para
+
+camarote superior e 2 para camarote inferior. Conforme a escolha do usuário, diga se que o VIP
+é camarote superior ou inferior. Imprima o valor do ingresso.
+crie um imóvel. Peça para o usuário digitar 1 para novo e 2 para velho. Conforme a definição do
+usuário, imprima o valor final do imóvel.
+ */
+/*
+ * Programadores: Pedro Sol B. Montes, Guilherme A. Dias 
+ * Data:13/12/2019
+ */
+
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Scanner; //importando a classe scanner para pegar informações do usuário
 public class TesteMain {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
@@ -63,18 +83,3 @@ System.out.println("1. Assistente e Tecnico  \n"+
 	}
 		
 }
-/*ImovelNovo in = new ImovelNovo();
-		ImovelVelho iv = new ImovelVelho();
-		
-		in.setEndereco("Rua dos milion�rios, 777");
-		in.setPreco(550300);
-		in.setValorAdicional(in.getPreco()*0.03);
-		System.out.println(in.toString());
-		in.valorImovelNovo(in.getPreco());
-		
-		
-		iv.setEndereco("Rua dos maltrapilhos, 888");
-		iv.setPreco(100500);
-		iv.setDescontoValor(iv.getPreco()*0.03);
-		System.out.println("\n\n"+iv.toString());
-		iv.valorImovelVelho(iv.getPreco());*/
