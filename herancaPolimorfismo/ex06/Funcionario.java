@@ -1,8 +1,12 @@
+// classe funcionario
 public class Funcionario {
 
+	//declarando variaveis prorias
 	int matricula;
 	String nome;
 	double salario;
+
+	//gets e sets 
 	public int getMatricula() {
 		return matricula;
 	}
@@ -23,6 +27,7 @@ public class Funcionario {
 		this.salario = salario;
 	}
 
+	// metodo para imprimir os valores do objeto
 	@Override
 	public String toString() {
 		return "Funcionario [matricula=" + matricula + ", nome=" + nome + ", salario=" + salario + "]";

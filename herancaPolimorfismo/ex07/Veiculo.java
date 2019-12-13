@@ -1,12 +1,13 @@
+// classe abstrata veiculo
 public abstract class Veiculo {
 
-	
+	//declarando variaveis
 	int qtdRodas;
 	String cor;
 	int ano;
 	int aro;
 	
-	
+	//gets e sets
 	public int getQtdRodas() {
 		return qtdRodas;
 	}
@@ -39,7 +40,8 @@ public abstract class Veiculo {
 		this.aro = aro;
 	}
 
-	abstract void listarVerifica��es();
+	//metodos abstratos
+	abstract void listarVerificacoes();
 	
 	abstract void limpar();
 	
