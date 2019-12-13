@@ -1,5 +1,3 @@
-package numero_2;
-
 public class DVDs extends Produto{
 
 	private String duracao;

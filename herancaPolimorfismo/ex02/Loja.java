@@ -11,34 +11,44 @@ diferentes (a sua escolha) a um vetor e, por fim, imprima o conteúdo do vetor.
 Programadores: Daniel Gastardelli e Tiago Marques
 Data: 11/12/2019
  */
-
-package numero_2;
-
+// biblioteca utilizada para criar lista de arrays
 import java.util.ArrayList;
+
+//biblioteca utilizada para leitura de dados do usuário
 import java.util.Scanner;
 
 //Classe principal
 public class Loja {
-	
-	//Método MAIN
+
 	public static void main(String[] args) {
 		
-		//Criação do Array de produtos
+		//criando uma array list de produtos
 		ArrayList<Produto> produtos = new ArrayList<Produto>();
 		
-		//Cadastro de produtos
-		CDs cd0 = new CDs;
-		cd0.dados("Ousadia e alegria", 20.00, 10);
-		CDs cd1 = new CDs;
-		cd1.dados("Mentiras", 25.00, 18);
+		//Criando Cd
+		CDs cd0 = new CDs();
+
+		// utilizando o construdor para inserir dados no objeto
+		cd0.dados("Back in Black", 20.00, 10);
+		
+		//Criando Cd
+		CDs cd1 = new CDs();
+		// utilizando o construdor para inserir dados no objeto
+		cd1.dados("Zeca Pacodignho, as Melhores", 25.00, 18);
 	
-		DVDs dvd0 = new DVDs;
+		//Criando dvd
+		DVDs dvd0 = new DVDs();
+		// utilizando o construdor para inserir dados no objeto
 		dvd0.dados("A vida de Stuart Little", 30.00, "2:00");
 		
-		Livros livro0 = new Livros;
+		//Criando livro
+		Livros livro0 = new Livros();
+		// utilizando o construdor para inserir dados no objeto
 		livro0.dados("Fantástico mundo de Raj", 25.00, "Daniboy");
 		
-		Livros livro1 = new Livros;
+		//Criando livro
+		Livros livro1 = new Livros();
+		// utilizando o construdor para inserir dados no objeto
 		livro1.dados("Rua sem fim", 35.00, "Rodrigo Tavares");
 		
 		//Inclusão dos produtos na Arraylist

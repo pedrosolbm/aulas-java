@@ -1,5 +1,3 @@
-package numero_2;
-
 //Classe feita com objetivo de instanciar um produto do tipo CD
 public class CDs extends Produto{
 
