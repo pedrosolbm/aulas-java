@@ -8,7 +8,10 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 // Importando o componente meu-primeiro2 da pasta 
 import { MeuPrimeiro2Component } from './meu-primeiro2.component';
 
-
+/* 
+ * Funções que pegam os atributos dos componentes criados e os atribui 
+ * nesse componete de teste 
+*/
 describe('MeuPrimeiro2Component', () => {
   let component: MeuPrimeiro2Component;
   let fixture: ComponentFixture<MeuPrimeiro2Component>;
