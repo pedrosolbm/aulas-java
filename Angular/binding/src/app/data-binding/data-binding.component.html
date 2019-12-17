@@ -1,26 +1,53 @@
+<!--
+Devolver os códigos com as devidas explicações, em comentários, sobre o funcionamento dos métodos, 
+necessidade de imports, aplicações das funcionalidades, quando um arquivo componente se comunica 
+com um template e vice-versa, etc.
+
+ * Programadores: Pedro Sol B. Montes, Guilherme A. Dias 
+ * Data:17/12/2019
+-->
+
+
+<!--Simples texto para ser visto na página-->
 
 
 <section class="property-binding">
 
     <article>
         <h3>Interpolation/Interpolação</h3>
+
+        <!--Utliza a interpolaçaõ para chamar o método da função anteriormente -->
         <p>String renderizada com interpolação: {{ url }}</p>
+
+        <!--Utliza a interpolaçaõ para chamar o método da função anteriormente -->
         <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+
+        <!--Utliza a interpolaçaõ para chamar o método da função anteriormente -->
         <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
+
+        <!--Utliza a interpolaçaõ para chamar o método da função anteriormente -->
         <p></p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso()}}
 
     </article>
 
+
+    <!---------Article para mostrar Imagens da "API"-------->
+
     <article>
         <h3>Property binding</h3>
 
+        <!--Pega a imagem com ulização de interpolação pela função atribuida-->
         <img src="{{ urlImagem }}">
+        <!--Pega a imagem com ulização de interpolação pela função atribuida-->
         <img [src]=" urlImagem ">
+        <!--Pega a imagem com ulização de interpolação pela função atribuida-->
         <img bind-src="urlImagem">
 
     </article>
+    <!--------------------Fim das Imagens---------------------->
 
 
+    <!--------------------Inicio dos das Alerts---------------------->
     <article>
         <h3>Classe Style Binding</h3>
         <div>
@@ -49,8 +76,12 @@
         </div>
     </article>
 
+    <!--------------------Fim das Alerts---------------------->
+
 </section>
 
+
+<!--------------------Eventos para cçique---------------------->
 <section class="event-binding">
 
     <article>
@@ -63,8 +94,11 @@
 
             <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor(campoInput.value)" (blur)="salvarValor(campoInput.value)" #campoInput/>
 
+
+            <!--Utliza a interpolaçaõ para chamar o método da função anteriormente -->
             <p>Valor atual: {{ valorAtual }}</p>
 
+            <!--Utliza a interpolaçaõ para chamar o método da função anteriormente -->
             <p>Valor salvo: {{ valorSalvo }}</p>
 
             <br><br>
@@ -78,6 +112,9 @@
         </div>
     </article>
 
+    <!--------------------Fim dos eventos para clique---------------------->
+
+    <!--------------------Obtem Nome ---------------------->
     <section class="two-way-binding">
         <article>
             <h3>Two-way data binding</h3>
@@ -88,6 +125,7 @@
 
                 <input type="text" [(ngModel)]="nome" />
 
+                <!--Utliza a interpolaçaõ para chamar o método da função anteriormente -->
                 <p>Você digitou {{ nome }} </p>
 
                 <br><br><br>
@@ -95,6 +133,7 @@
 
             <div>
 
+                <!--Utliza a interpolaçaõ para chamar o método da função anteriormente -->
                 <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade </p>
 
                 <input type="text" [(ngModel)]="pessoa.nome" />
@@ -103,6 +142,8 @@
                 <br><br><br>
             </div>
         </article>
+
+        <!--------------------Fim Obtem Nome ---------------------->
 
     </section>
 
@@ -119,4 +160,5 @@
             <br><br><br>
 
         </article>
+
     </section>

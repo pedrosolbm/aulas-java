@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-// Método para utlizar essas funções no template
+// Método para utlizar/exportar essas funções no template
 export class AppComponent {
   title = 'primeiro-projeto';
 }

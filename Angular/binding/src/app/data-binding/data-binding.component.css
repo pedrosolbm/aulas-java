@@ -1,4 +1,6 @@
-.highlight {
-    background-color: yellow;
-    font-weight: bold;
-}
+ /* coloque aqui suas modificações de estilos para utilizar no componente*/
+ 
+ .highlight {
+     background-color: yellow;
+     font-weight: bold;
+ }
