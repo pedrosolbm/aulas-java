@@ -9,11 +9,11 @@ public interface PlanetaService {
 
 	List<Planeta> listarTodos();
 	
+	List<Planeta> getPlanetas(); // teste do metodo GET
+	
 	Optional<Planeta> listarPorId(String id);
 	
 	List<Planeta> listarPorNome(String nome);
-	
-	List<Planeta> getPlanetas();
 	
 	Planeta cadastrar(Planeta planeta);
 	
