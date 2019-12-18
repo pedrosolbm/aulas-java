@@ -11,7 +11,7 @@ public interface PlanetaService {
 	
 	Optional<Planeta> listarPorId(String id);
 	
-//	List<Planeta> listarPorNome(String nome);
+	List<Planeta> listarPorNome(String nome);
 	
 	Planeta cadastrar(Planeta planeta);
 	

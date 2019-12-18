@@ -26,10 +26,10 @@ public class ClienteServiceImpl implements PlanetaService {
 		return this.planetaRepository.findById(id);
 	}
 
-//	@Override
-//	public List<Planeta> listarPorNome(String nome) { // TODO Auto-generated
-//		return this.planetaRepository.listarPorNome(nome);
-//	}
+	@Override
+	public List<Planeta> listarPorNome(String nome) { 
+		return this.planetaRepository.findByNome(nome);
+	}
 
 	@Override
 	public Planeta cadastrar(Planeta planeta) {

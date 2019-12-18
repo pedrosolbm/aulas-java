@@ -44,11 +44,17 @@ public class PlanetaController {
 		return ResponseEntity.ok(new Response<List<Planeta>>(this.planetaService.listarTodos()));
 	}
 
-	@GetMapping(path = "/{id}")
+	@GetMapping(path = "/id/{id}")
 	public ResponseEntity<Response<Optional<Planeta>>> listarPorId(@PathVariable(name = "id") String id) {
 		return ResponseEntity.ok(new Response<Optional<Planeta>>(this.planetaService.listarPorId(id)));
 	}
 
+	@GetMapping(path="/nome/{nome}")
+	public ResponseEntity<Response<List<Planeta>>> listaPorNome(@PathVariable(name="nome") String nome){
+		return ResponseEntity.ok(new Response<List<Planeta>>(this.planetaService.listarPorNome(nome)));
+	}
+		
+	
 	@PostMapping
 	public ResponseEntity<Response<Planeta>> cadastrar(@Valid @RequestBody Planeta planeta, BindingResult resultado) {
 		// verifica se houve erros ao tentar cadastrar um planeta
@@ -64,7 +70,7 @@ public class PlanetaController {
 		return ResponseEntity.ok(new Response<Planeta>(this.planetaService.cadastrar(planeta)));
 	}
 
-	@PutMapping(path = "/{id}")
+	@PutMapping(path = "/id/{id}")
 	public ResponseEntity<Response<Planeta>> atualizar(@PathVariable(name = "id") String id,
 			@Valid @RequestBody Planeta planeta, BindingResult resultado) {
 		if (resultado.hasErrors()) {
@@ -81,7 +87,7 @@ public class PlanetaController {
 		return ResponseEntity.ok(new Response<Planeta>(this.planetaService.atualizar(planeta)));
 	}
 
-	@DeleteMapping(path = "/{id}")
+	@DeleteMapping(path = "/id/{id}")
 	public ResponseEntity<Response<Integer>> remover(@PathVariable(name = "id") String id) {
 		this.planetaService.remover(id);
 		return ResponseEntity.ok(new Response<Integer>(1));
