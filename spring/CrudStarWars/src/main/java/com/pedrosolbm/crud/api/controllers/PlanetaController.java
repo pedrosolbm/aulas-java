@@ -27,9 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 // importando o arquivo planeta service
 import com.pedrosolbm.crud.api.services.PlanetaService;
-
-// importando o arquivo Planeta
-import com.pedrosolbm.crud.api.documents.Planeta;
+import com.pedrosolbm.crud.api.models.Planeta;
 import com.pedrosolbm.crud.api.responses.Response;
 
 @RestController
@@ -53,7 +51,6 @@ public class PlanetaController {
 	public ResponseEntity<Response<List<Planeta>>> listaPorNome(@PathVariable(name="nome") String nome){
 		return ResponseEntity.ok(new Response<List<Planeta>>(this.planetaService.listarPorNome(nome)));
 	}
-		
 	
 	@PostMapping
 	public ResponseEntity<Response<Planeta>> cadastrar(@Valid @RequestBody Planeta planeta, BindingResult resultado) {

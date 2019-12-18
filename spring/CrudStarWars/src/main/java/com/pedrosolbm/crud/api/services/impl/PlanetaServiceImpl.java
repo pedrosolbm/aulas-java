@@ -6,12 +6,12 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.pedrosolbm.crud.api.documents.Planeta;
+import com.pedrosolbm.crud.api.models.Planeta;
 import com.pedrosolbm.crud.api.repositories.PlanetaRepository;
 import com.pedrosolbm.crud.api.services.PlanetaService;
 
 @Service
-public class ClienteServiceImpl implements PlanetaService {
+public class PlanetaServiceImpl implements PlanetaService {
 
 	@Autowired
 	private PlanetaRepository planetaRepository;

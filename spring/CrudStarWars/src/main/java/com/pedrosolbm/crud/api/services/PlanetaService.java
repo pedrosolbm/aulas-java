@@ -3,7 +3,7 @@ package com.pedrosolbm.crud.api.services;
 import java.util.List;
 import java.util.Optional;
 
-import com.pedrosolbm.crud.api.documents.Planeta;
+import com.pedrosolbm.crud.api.models.Planeta;
 
 public interface PlanetaService {
 
@@ -12,6 +12,8 @@ public interface PlanetaService {
 	Optional<Planeta> listarPorId(String id);
 	
 	List<Planeta> listarPorNome(String nome);
+	
+//	Planeta criaPlanetas(Planeta planetas);
 	
 	Planeta cadastrar(Planeta planeta);
 	

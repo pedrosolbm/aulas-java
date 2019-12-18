@@ -1,4 +1,4 @@
-package com.pedrosolbm.crud.api.documents;
+package com.pedrosolbm.crud.api.models;
 
 import javax.validation.constraints.NotEmpty;
 import org.springframework.data.annotation.Id;
