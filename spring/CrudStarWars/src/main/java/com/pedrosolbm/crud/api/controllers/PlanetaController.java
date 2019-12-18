@@ -37,6 +37,11 @@ public class PlanetaController {
 	@Autowired
 	private PlanetaService planetaService;
 
+	private static final String API_URL="https://swapi.co/api/planets/";
+	
+	String charset= "UTF-8";
+	
+	
 	@GetMapping
 	public ResponseEntity<Response<List<Planeta>>> listarTodos() {
 		return ResponseEntity.ok(new Response<List<Planeta>>(this.planetaService.listarTodos()));

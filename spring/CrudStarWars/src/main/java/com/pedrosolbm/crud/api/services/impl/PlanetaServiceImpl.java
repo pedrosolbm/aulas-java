@@ -17,6 +17,11 @@ public class PlanetaServiceImpl implements PlanetaService {
 	private PlanetaRepository planetaRepository;
 
 	@Override
+	public List<Planeta> getPlanetas() {
+		
+	}
+	
+	@Override
 	public List<Planeta> listarTodos() {
 		return this.planetaRepository.findAll();
 	}

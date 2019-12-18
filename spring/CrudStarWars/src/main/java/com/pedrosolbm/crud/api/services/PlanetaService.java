@@ -13,7 +13,7 @@ public interface PlanetaService {
 	
 	List<Planeta> listarPorNome(String nome);
 	
-//	Planeta criaPlanetas(Planeta planetas);
+	List<Planeta> getPlanetas();
 	
 	Planeta cadastrar(Planeta planeta);
 	
