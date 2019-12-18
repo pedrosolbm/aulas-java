@@ -1,13 +1,13 @@
-package com.swapi.swapirest;
+package com.pedrosolbm.crud.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SwapirestApplication {
+public class CrudStarWarsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SwapirestApplication.class, args);
+		SpringApplication.run(CrudStarWarsApplication.class, args);
 	}
 
 }
