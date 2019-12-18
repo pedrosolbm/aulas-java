@@ -43,13 +43,22 @@ public class PlanetaServiceImpl implements PlanetaService {
 			String jsonData = response.body().string();
 			System.out.println(jsonData);
 			
-//			JSONObject Jobject = new JSONObject(jsonData);
-//			
-//			JSONArray Jarray = Jobject.getJSONArray("planetas");
-//			
-//			for (int i = 0; i < Jarray.length(); i++) {
-//				JSONObject object = Jarray.getJSONObject(i);
-//			}
+			JSONObject Jobject = new JSONObject(jsonData);
+
+			JSONArray Jarray = Jobject.getJSONArray("results");
+			
+			
+			for (int i = 0; i < Jarray.length(); i++) {
+				JSONObject object = Jarray.getJSONObject(i);
+				String nome= object.getString("name");
+				String clima= object.getString("climate");
+				String terreno= object.getString("terrain");
+				JSONArray Jfilms = object.getJSONArray("films");
+				int aparicao = Jfilms.length();
+				
+				System.out.println("nome: " + nome + " \t clima: "+ clima + " \t terreno: "+ terreno + " \t APARECEU: "+ aparicao);
+			}
+
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

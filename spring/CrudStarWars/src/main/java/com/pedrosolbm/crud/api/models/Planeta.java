@@ -18,6 +18,8 @@ public class Planeta {
 
 	private String terreno;
 
+	private int aparicao;
+
 	// Construtor vazio
 	public Planeta() {
 	}
@@ -56,6 +58,14 @@ public class Planeta {
 
 	public void setTerreno(String terreno) {
 		this.terreno = terreno;
+	}
+
+	public int getAparicao() {
+		return aparicao;
+	}
+
+	public void setAparicao(int aparicao) {
+		this.aparicao = aparicao;
 	}
 
 }
