@@ -54,20 +54,21 @@ public class PlanetaController {
 		return ResponseEntity.ok(new Response<List<Planeta>>(this.planetaService.listarPorNome(nome)));
 	}
 
-	@PostMapping(path = "/planetas")
-	public ResponseEntity<Response<Planeta>> cadastrar(@Valid @RequestBody Planeta planeta, BindingResult resultado) {
-		// verifica se houve erros ao tentar cadastrar um planeta
-		if (resultado.hasErrors()) {
-			// gera um arraylist de erros
-			List<String> erros = new ArrayList<String>();
-			// cada erro gerado será adicionado na lista de erros
-			resultado.getAllErrors().forEach(erro -> erros.add(erro.getDefaultMessage()));
-			// retorna erro 400 e a lista de erros para o usário
-			return ResponseEntity.badRequest().body(new Response<Planeta>(erros));
-		}
-		// retorna o planeta cadastrado
-		return ResponseEntity.ok(new Response<Planeta>(this.planetaService.cadastrar(planeta)));
-	}
+	//Cria o planeta sem fazer a verificação de filmes na api
+//	@PostMapping(path = "/planetas")
+//	public ResponseEntity<Response<Planeta>> cadastrar(@Valid @RequestBody Planeta planeta, BindingResult resultado) {
+//		// verifica se houve erros ao tentar cadastrar um planeta
+//		if (resultado.hasErrors()) {
+//			// gera um arraylist de erros
+//			List<String> erros = new ArrayList<String>();
+//			// cada erro gerado será adicionado na lista de erros
+//			resultado.getAllErrors().forEach(erro -> erros.add(erro.getDefaultMessage()));
+//			// retorna erro 400 e a lista de erros para o usário
+//			return ResponseEntity.badRequest().body(new Response<Planeta>(erros));
+//		}
+//		// retorna o planeta cadastrado
+//		return ResponseEntity.ok(new Response<Planeta>(this.planetaService.cadastrar(planeta)));
+//	}
 
 	@PutMapping(path = "planetas/id/{id}")
 	public ResponseEntity<Response<Planeta>> atualizar(@PathVariable(name = "id") String id,
@@ -91,7 +92,7 @@ public class PlanetaController {
 		return ResponseEntity.ok(new Response<Integer>(1));
 	}
 
-	@PostMapping
+	@PostMapping(path="/planetas")
 	public ResponseEntity<Planeta> savePlaneta(@Valid @RequestBody Planeta planeta, HttpServletResponse response) {
 		Planeta planetaSalvo = planetaService.criarPlaneta(planeta);
 		if (planetaSalvo != null) {
