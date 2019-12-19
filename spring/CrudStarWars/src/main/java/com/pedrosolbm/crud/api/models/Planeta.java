@@ -18,7 +18,7 @@ public class Planeta {
 
 	private String terreno;
 
-	private int aparicao;
+	private int qntAparicoes;
 
 	// Construtor vazio
 	public Planeta() {
@@ -42,7 +42,7 @@ public class Planeta {
 		this.nome = nome;
 	}
 
-	@NotEmpty(message = "clima nao pode ser vazio ")
+//	@NotEmpty(message = "clima nao pode ser vazio ")
 	public String getClima() {
 		return clima;
 	}
@@ -51,7 +51,7 @@ public class Planeta {
 		this.clima = clima;
 	}
 
-	@NotEmpty(message = "Terreno nao pode ser vazio ")
+//	@NotEmpty(message = "Terreno nao pode ser vazio ")
 	public String getTerreno() {
 		return terreno;
 	}
@@ -60,12 +60,37 @@ public class Planeta {
 		this.terreno = terreno;
 	}
 
-	public int getAparicao() {
-		return aparicao;
+	public int getQntAparicoes() {
+		return qntAparicoes;
 	}
 
-	public void setAparicao(int aparicao) {
-		this.aparicao = aparicao;
+	public void setQntAparicoes(int qntAparicoes) {
+		this.qntAparicoes = qntAparicoes;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Planeta other = (Planeta) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
 	}
 
 }
