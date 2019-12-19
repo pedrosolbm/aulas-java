@@ -1,7 +1,10 @@
 package com.pedrosolbm.crud.api.models;
 
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -12,6 +15,8 @@ public class Planeta {
 	@Id
 	private String id;
 
+	@Indexed(unique=true)
+	@NotNull
 	private String nome;
 
 	private String clima;

@@ -1,6 +1,5 @@
 package com.pedrosolbm.crud.api.controllers;
 
-//import para poder utilizar ArrayList
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -8,27 +7,19 @@ import java.util.Optional;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
-// para poder utilizar a anotação autowired
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.HttpStatus;
-//para utilizar o metodo de listagem 
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.DeleteMapping;
-//para poder utilizar a anotação getMapping
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-//para utilizar a anotação requestMapping
 import org.springframework.web.bind.annotation.RequestMapping;
-
-//para utilizar a anotação restController
 import org.springframework.web.bind.annotation.RestController;
-
-// importando o arquivo planeta service
 import com.pedrosolbm.crud.api.services.PlanetaService;
 import com.pedrosolbm.crud.api.events.RecursoCriadoEvent;
 import com.pedrosolbm.crud.api.models.Planeta;
