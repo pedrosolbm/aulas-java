@@ -3,11 +3,15 @@ package br.com.caelum.capitulo16;
 import br.com.caelum.capitulo16.Conta;
 import br.com.caelum.capitulo16.ValorInvalidoException;
 
+//declarando uma classe abstrata Conta
 public abstract class Conta {
+
+	// declarando variáveis da classe
 	private int numero;
 	protected double saldo;
 	private String cliente;
 
+	//gets e sets
 	public double getSaldo() {
 		return this.saldo;
 	}
@@ -28,6 +32,7 @@ public abstract class Conta {
 		this.cliente = cliente;
 	}
 	
+	//retorna o saldo da conta
 	public String toString() {
 		return "esse objeto é uma conta com saldo R$" + this.saldo;
 	}
