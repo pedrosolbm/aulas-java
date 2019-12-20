@@ -1,8 +1,11 @@
 package br.com.caelum.capitulo06;
 
+// declarando a classe pessoaFisica
 public class PessoaFisica {
+	//declaração de variáveis
 	private String cpf;
 
+	// gets e sets
 	public String getCpf() {
 		return cpf;
 	}
@@ -11,16 +14,19 @@ public class PessoaFisica {
 		this.cpf = cpf;
 	}
 	
+	//construtor de classe utilizando cpf
 	public PessoaFisica(String cpf) {
+		// valida o cpf ao criar o objeto
 		if (this.validaCPF(cpf) == true) {
 			this.cpf = cpf;
 			System.out.println("CPF validado");
 		} else {
-			System.out.println("CPF inv�lido");
+			System.out.println("CPF invalido");
 		}
 	}
-	
+
 	public boolean validaCPF(String cpf) { 
+		//verifica se o cpf tem 11 numeros
 		if (cpf.length() != 11) {
 			return false;
 		}
@@ -28,6 +34,7 @@ public class PessoaFisica {
 		return this.calculaDigitosVerificadoresCPF(digitosIniciaisDoCPF).equals(cpf.substring(9, 11));
 	}
 	
+	//metodo para calcular o digito verificador de CPF
 	private String calculaDigitosVerificadoresCPF(String digitos) {
 		Integer primeiroDigito, segundoDigito;
 		int soma = 0, peso = 10;

@@ -1,12 +1,17 @@
 package br.com.caelum.capitulo07;
 
+//declarando a classe Banco
 public class Banco {
+	// declarando o vetor de contas
 	private Conta[] contas;
 	
+
+	//construtor do objeto banco passando parametro para definir a quantidade de contas
 	public Banco(int quantidadeDeContas) {
 		this.contas = new Conta[quantidadeDeContas];
 	}
 	
+	//metodo para adicionar contas no banco
 	public void adiciona(Conta c) {
 		boolean arrayCheio = true;
 		for (int i = 0; i < contas.length; i++) {

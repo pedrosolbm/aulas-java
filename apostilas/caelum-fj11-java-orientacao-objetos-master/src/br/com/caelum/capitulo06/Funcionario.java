@@ -2,7 +2,10 @@ package br.com.caelum.capitulo06;
 
 import br.com.caelum.capitulo06.Data;
 
+//declarando a classe Funcion√°rio
 public class Funcionario {
+
+	//declarando vari√°veis
 	private int identificador;
 	private static int contadorDeFuncionarios;
 	private String nome;
@@ -11,15 +14,18 @@ public class Funcionario {
 	private Data dataEntrada;
 	private String rg;
 	
+	//construtor vazio
 	public Funcionario() {
 		this.identificador = ++Funcionario.contadorDeFuncionarios;
 	}
 	
+	// construtor cheio
 	public Funcionario(String nome) {
 		this.nome = nome;
 		this.identificador = ++Funcionario.contadorDeFuncionarios;
 	}
 	
+	//gets e sets
 	public int getIdentificador() {
 		return identificador;
 	}
@@ -64,14 +70,16 @@ public class Funcionario {
 		this.rg = rg;
 	}
 
+	//adiciona um valor de aumento no sal√°rio do funcion√°rio
 	public void recebeAumento(double aumento) {
 		this.salario += aumento;
 	}
 	
+	//calcula o ganho do funcionario
 	public double calculaGanhoAnual() {
 		return this.salario * 12;
 	}
-	
+	//mostra informa√ß√µes do funcion√°rio
 	public void mostra() {
 		System.out.println("Identificador: " + this.identificador);
 		System.out.println("Nome: " + this.nome);
@@ -79,9 +87,9 @@ public class Funcionario {
 		if (this.dataEntrada.validaData() == true) {
 			System.out.println("Data da entrada: " + this.dataEntrada.formatada());
 		} else
-			System.out.println("AtenÁ„o: A Data de Entrada " + this.dataEntrada.formatada() +  " È inv·lida!");
+			System.out.println("Atencao: A Data de Entrada " + this.dataEntrada.formatada() +  " invalida!");
 		System.out.println("RG: " + this.rg);
-		System.out.println("Sal·rio atual: " + this.salario);
+		System.out.println("Salario atual: " + this.salario);
 		System.out.println("Ganho anual: " + this.calculaGanhoAnual());
 		System.out.println("##############################");
 	}

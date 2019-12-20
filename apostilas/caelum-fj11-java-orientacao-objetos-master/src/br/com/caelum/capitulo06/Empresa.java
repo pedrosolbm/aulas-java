@@ -2,15 +2,20 @@ package br.com.caelum.capitulo06;
 
 import br.com.caelum.capitulo06.Funcionario;
 
+//declarando a classe empresa
 public class Empresa {
+
+	//declarando variaveis da empresa
 	private String nome;
 	private Funcionario[] empregados;
 	private String cnpj;
 	
+	//construtor da empresa utilizando um inteiro para definir o tamnho do verempregados
 	public Empresa(int quantidadeDeFuncionarios) {
 		this.empregados = new Funcionario[quantidadeDeFuncionarios];
 	}
 	
+	//getes e sets
 	public String getNome() {
 		return nome;
 	}
@@ -31,6 +36,7 @@ public class Empresa {
 		this.cnpj = cnpj;
 	}
 
+	//adicionando novos funcionarios ao vetor
 	public void adiciona(Funcionario f) {
 		boolean arrayCheio = true;
 		for (int i = 0; i < empregados.length; i++) {
@@ -39,12 +45,12 @@ public class Empresa {
 				arrayCheio = false;
 				break;
 			} if (empregados[empregados.length - 1] != null) {
-				System.out.println("Todas as vagas já foram preenchidas!");				
+				System.out.println("Todas as vagas foram preenchidas!");				
 				break;
 			}
 		}
 		if (arrayCheio) {
-			System.out.println("Realocando novo funcionário: " + f.getNome() + "\n");
+			System.out.println("Realocando novo funcionario: " + f.getNome() + "\n");
 			Funcionario[] arrayMaior = new Funcionario[this.empregados.length + 1];
 			for (int i = 0; i < this.empregados.length; i++) {
 				arrayMaior[i] = empregados[i];
@@ -67,7 +73,7 @@ public class Empresa {
 				return true;
 			} 
 		}
-		System.out.println(f.getNome() + " não faz parte da empresa " + this.nome);
+		System.out.println(f.getNome() + " nï¿½o faz parte da empresa " + this.nome);
 		return false;
 	}
 }
