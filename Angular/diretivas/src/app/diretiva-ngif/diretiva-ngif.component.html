@@ -1,0 +1,48 @@
+<!--apenas um título-->
+<h5>*ngIf</h5>
+
+
+<h6>Exemplo ngIf variavel string arrays</h6>
+
+<div *ngIf="cursos.length > 0">
+    Lista de cursos aqui
+</div>
+<div *ngIf="cursos.length == 0">
+    Não existem cursos para serem listados
+</div><br><br>
+
+<h6>Exemplo ngIf variavel boolean</h6>
+
+<div *ngIf="mostrarCursos">
+    Lista de cursos aqui
+</div>
+
+<div *ngIf="!mostrarCursos">
+    Não existem cursos para serem listados
+</div><br><br>
+
+<h6>botão com funçao da variavel boolean</h6>
+
+<div>
+    <button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
+</div><br><br>
+
+<h6>hidden como alternativa</h6>
+
+<div [hidden]="!mostrarCursos">
+    Lista de cursos aqui
+</div>
+
+<div [hidden]="mostrarCursos">
+    Não existem cursos para serem listados
+</div><br><br>
+
+<h6>Sobre como funciona o * nas diretivas</h6>
+
+<ng-template [ngIf]="mostrarCursos">
+    <div>Lista de cursos aqui.</div>
+</ng-template>
+
+<div ng-template="ngIf mostrarCursos">
+    Lista de cursos aqui.
+</div>

@@ -1,0 +1,44 @@
+<h5>Diretiva fundo amarelo</h5>
+
+<p appFundoAmarelo>Texto com fundo amarelo.</p>
+
+<button appFundoAmarelo>Botão com fundo amarelo.</button>
+
+<br><br>
+
+<h5>Diretiva highlight usando o mouse</h5>
+
+<p appHighlightMouse>
+    Texto com highlight quando passo o mouse.
+</p>
+
+<br><br>
+
+<h5>Diretiva highlight</h5>
+
+<p [appHighlight]="'red'" [defaultColor]="'grey'">
+    Texto com highlight com cores customizadas.
+</p>
+
+<br><br>
+
+<h5>Diretiva Estrutura customizada - ngElse</h5>
+
+<div *ngIf="mostrarCursos">
+    Lista de cursos aqui.
+</div>
+<div *ngElse="mostrarCursos">
+    Não existem cursos para serem listados.
+</div>
+
+<br>
+<button (click)="onMostrarCursos()">
+  Mostrar ou esconder cursos
+</button>
+<br>
+
+<ng-template [ngElse]="mostrarCursos">
+    <div>
+        Não existem cursos para serem listados.
+    </div>
+</ng-template>
