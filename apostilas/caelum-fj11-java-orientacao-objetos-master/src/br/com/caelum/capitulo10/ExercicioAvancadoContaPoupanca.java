@@ -1,8 +1,10 @@
 package br.com.caelum.capitulo10;
 
+//classe ExercicioAvancadoContaPoupanca herdando metodos da interface ExercicioAvancadoConta
 public class ExercicioAvancadoContaPoupanca implements ExercicioAvancadoConta {
 	private double saldo;
-	
+
+	//sobreescrevendo metodos herdados
 	@Override
 	public double getSaldo() {
 		return this.saldo;
