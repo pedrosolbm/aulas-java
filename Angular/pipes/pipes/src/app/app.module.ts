@@ -1,3 +1,4 @@
+// Imporntando para o módulo os Serviços criados e sua classes
 import { SettingsService } from './settings.service';
 
 // Importando um componente da biblioteca @angular/platform-browser direto do angular
