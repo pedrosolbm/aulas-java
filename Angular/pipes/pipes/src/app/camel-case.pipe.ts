@@ -1,5 +1,8 @@
+// Importando as bibliotecas Pipes e PipeTransform @angular/core direto do angular
+// para fazer as conversões necessárias
 import { Pipe, PipeTransform } from '@angular/core';
 
+// Atribuindo ao Pipe uma varivel "name" e inicializando uma string a ela
 @Pipe({
   name: 'camelCase'
 })

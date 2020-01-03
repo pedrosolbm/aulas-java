@@ -1,7 +1,16 @@
+// Importando a biblioteca async e TestBest @angular/core/testing direto do angular
 import { TestBed, async } from '@angular/core/testing';
+
+// Importando as rotas a serem atribuidas no modulo testing
 import { RouterTestingModule } from '@angular/router/testing';
+
+//Importamdo os componetes do aplicação
 import { AppComponent } from './app.component';
 
+/*
+ * Funções que pegam os atributos dos componentes criados e os atribui
+ * nesse componete de teste
+*/
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
