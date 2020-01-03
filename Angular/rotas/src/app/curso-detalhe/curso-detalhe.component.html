@@ -1,0 +1,16 @@
+<!-- Classe container é do Materialize-css e apenas aplica uma margem -->
+<!-- aqui vai ter um input para permitir entrar com um id do curso -->
+<!-- variável local no input que será passado no parâmetro do routerLink (acima) -->
+<!-- <div class="container">
+    <p>Entre com o id do curso</p>
+    <input #idCurso>
+</div> -->
+
+<!-- id do componente sendo chamado por interpolação -->
+<p>
+    id : {{ id }}
+</p>
+
+<!-- interpolaçao de curso.nome do componente. Operador Elvis é usado porque se o valor for 
+    nulo não dará erro no template -->
+<p>Curso: {{ curso?.nome }}</p>

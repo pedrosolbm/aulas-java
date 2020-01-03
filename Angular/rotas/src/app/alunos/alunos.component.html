@@ -1,0 +1,12 @@
+
+<p>
+    Alunos:
+</p>
+
+<div class="collection">
+    <a class="collection-item" *ngFor="let aluno of alunos" [routerLink]="['/alunos', aluno.id]">
+ {{ aluno.nome }}
+    </a>
+</div>
+
+<router-outlet></router-outlet>
