@@ -1,3 +1,13 @@
+<!--
+Devolver os códigos com as devidas explicações, em comentários, sobre o funcionamento dos métodos,
+necessidade de imports, aplicações das funcionalidades, quando um arquivo componente se comunica
+com um template e vice-versa, etc.
+
+ * Programadores: Pedro Sol B. Montes, Guilherme A. Dias
+ * Data:06/01/2020
+-->
+
+
 <div class="card mt-3">
     <div class="card-header">
         <div class="float-left">
@@ -7,6 +17,8 @@
             <button type="button" class="btn btn-primary" [routerLink]="['novo']">Novo Curso</button>
         </div>
     </div>
+
+    <!-------------------------Tabela para Criação e Demonstração dos cursos-------------------->
     <div class="card-body">
         <table class="table table-hover">
             <thead>
@@ -17,7 +29,7 @@
                 </tr>
             </thead>
             <tbody>
-   
+
                 <tr *ngFor="let curso of cursos">
                     <td>{{ curso.id }}</td>
                     <td>{{ curso.nome }}</td>
@@ -35,6 +47,7 @@
             </tbody>
         </table>
 
+        <!-------------------------Modal para confirmação de exclusão do curso ---------------------->
         <ng-template #deleteModal>
             <div class="modal-body text-center">
                 <p>Tem certeza que deseja remover o curso?</p>

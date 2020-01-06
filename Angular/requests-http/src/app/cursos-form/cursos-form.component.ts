@@ -1,24 +1,45 @@
+// Importando um componente da biblioteca @angular/core direto do angular 
 import { Component, OnInit } from '@angular/core';
+
+// importando as bibliotecas para edição dos formulários
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
+// Linhas a seguir fazem a ligação com os serviços Http criados
 import { CursosService } from '../cursos/cursos.service';
+
+// Importando a biblioteca com um serviço que os aplicativos podem 
+// usar para interagir com o URL de um navegador.
 import { Location } from '@angular/common';
+
+/* O ActivedRoute fornece acesso as informações sobre uma rota associada a um 
+*  componente carregado em uma ligação. Usado para percorrer a árvore de rotas e 
+*  extrair informações dos nós.
+*/ 
 import { ActivatedRoute } from '@angular/router';
+
+/* O RxJS (Extensões Reativas para JavaScript) é uma biblioteca para programação 
+   reativa usando observáveis ​​que facilita a composição de código assíncrono ou baseado 
+   em retorno de chamada. */
 import { map, switchMap, exhaustMap } from 'rxjs/operators';
 
+// Utilizando o componente e referênciando Selector e qual o template
 @Component({
   selector: 'app-cursos-form',
   templateUrl: './cursos-form.component.html',
   styleUrls: ['./cursos-form.component.css']
 })
+
+// Método para utlizar/exportar essas funções no template
 export class CursosFormComponent implements OnInit {
 
   form: FormGroup;
 
   submitted = false
 
+  // Construtor para a montagem do formulário
   constructor(private fb: FormBuilder, private service: CursosService, private location: Location, private route: ActivatedRoute) { }
 
-
+  //métodos ngOnInit para carregar elemetos na página quando ela iniciar
   ngOnInit() {
 
       this.route.params
