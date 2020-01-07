@@ -1,28 +1,30 @@
+<!-- Barra de Navegação que peguei do materialize  -->
+<nav>
+  <div class="nav-wrapper">
+    <!-- routerLink direciona para a rota definida -->
+    <a routerLink=" " class="brand-logo right">Rotas Ng2</a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <!-- routerLinkActive mantem ativa a barra de navegação atual -->
+      <li  routerLinkActive="active"><a routerLink="/login">Login</a></li>
+      <li r outerLinkActive="active"><a routerLink="/cursos">Cursos</a></li>
 
-<!-- VERSÃO COMENTADA É DE ANTES DO EXEMPLO DE ESCONDER MENU QUANDO USA LOGIN  -->
- <nav>
-    <div class="nav-wrapper">
-        <a routerLink="" class="brand-logo right">Logo</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
-            <li routerLinkActive="active"><a routerLink="/cursos">Cursos</a></li>
-            <li routerLinkActive="active"><a [routerLink]="['curso', idCurso.value]">Curso com id</a></li>
-            <li routerLinkActive="active"><a routerLink="/alunos">Alunos</a></li>
-        </ul>
-    </div>
-</nav> 
+      <!-- RouterLink propertyBinding pegando a info do idCurso passa como parametro
+      a rota e depois a informação, no vaso o valor no input do ID do curso -->
+      
+      <!-- <li routerLinkActive="active"><a [routerLink]="['curso', idCurso.value]">Curso com Id</a></li> -->
+      <li routerLinkActive="active"><a routerLink="/alunos">Alunos</a></li>
+        
 
-<!-- <nav *ngIf="mostrarMenu">
-    <div class="nav-wrapper">
-        <a routerLink="/home" class="brand-logo right">Inicio</a>
-        <ul id="nav-mobile">
-            <li routerLinkActive="active"><a routerLink="/login">Login</a></li>
-            <li routerLinkActive="active"><a routerLink="/cursos">Cursos</a></li>
-            <li routerLinkActive="active"><a routerLink="/alunos">Alunos</a></li>
-        </ul>
-    </div>
+
+
+
+    </ul>
+  </div>
 </nav>
-
 <div class="container">
-    <router-outlet></router-outlet>
-</div> -->
+  <!-- <p>Entre com o id do Curso</p>
+  <input #idCurso>  -->
+  <router-outlet></router-outlet>
+</div>
+
+

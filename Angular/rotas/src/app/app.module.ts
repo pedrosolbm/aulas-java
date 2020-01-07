@@ -1,45 +1,48 @@
+import { AlunosModule } from './alunos/alunos.module';
+import { CursosModule } from './cursos/cursos.module';
+//import { CursosService } from './cursos/cursos.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MaterializeButtonModule, MaterializeCardModule } from 'materialize-angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+import { MzButtonModule, MzInputModule } from 'ngx-materialize';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+//import { CursosComponent } from './cursos/cursos.component';
 import { LoginComponent } from './login/login.component';
-import { CursosComponent } from './cursos/cursos.component';
-
-
-import { routing } from './app.routing';
-import { CursosService } from './cursos/cursos.service';
-import { AlunosService } from './alunos/alunos.service';
-import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
-import { InfoNaoEncontradaComponent } from './info-nao-encontrada/info-nao-encontrada.component';
-import { AlunosComponent } from './alunos/alunos.component';
-import { AlunoDetalheComponent } from './alunos/aluno-detalhe/aluno-detalhe.component';
-
-import { AuthService } from './login/auth.service';
-
-import { FormsModule } from '@angular/forms';
-import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { HomeComponent } from './home/home.component';
+//import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
+//import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
+import { AppRoutingModule } from './app.routing.module';
+// import { AlunosComponent } from './alunos/alunos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    //CursosComponent,
     LoginComponent,
-    CursosComponent,
-    CursoDetalheComponent,
-    InfoNaoEncontradaComponent,
-    AlunosComponent,
-    AlunoDetalheComponent,
-    PaginaNaoEncontradaComponent
+    HomeComponent,
+    //AlunosComponent,
+    //CursoDetalheComponent,
+    // CursoNaoEncontradoComponent  
   ],
   imports: [
-  BrowserModule,
+    MzButtonModule,
+    MzInputModule,
+    CommonModule,
+    BrowserModule,
+    MaterializeButtonModule,
+    MaterializeCardModule,
+    BrowserAnimationsModule,
+    CursosModule,
+    AlunosModule,
     AppRoutingModule,
-    routing,
-    FormsModule
   ],
-  providers: [AlunosService, CursosService, AuthService],
+  // providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
